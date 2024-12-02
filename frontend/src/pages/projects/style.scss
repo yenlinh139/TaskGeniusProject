@@ -1,0 +1,49 @@
+.bgTittleModel {
+    background: var(--blue);
+    color: #fff;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.bgCreate {
+    background: linear-gradient(to bottom right, var(--blue), var(--lightBlue));
+    border: none;
+    color: #fff;
+    transition: transform 0.3s ease;
+
+    &:hover{
+        color: #fff;
+        background: var(--blue);
+        transition: transform 0.3s ease;
+
+    }
+}
+
+.bgPrimary {
+    background: linear-gradient(to bottom right, var(--lightPrimary), var(--primary));
+    transition: transform 0.3s ease;
+
+    color: #fff;
+
+    &:hover{
+        background: var(--hoverPrimary);
+        color: #fff;
+        transition: transform 0.3s ease;
+
+    }
+}
+
+.modal-content {
+    border: none;
+}
+.card {
+    border: none;
+    
+}
+.card-body:hover {
+    box-shadow: 0 0 16px rgba(0, 0, 0, 0.3);
+    
+}
+.form-select {
+    cursor: pointer;
+}
+

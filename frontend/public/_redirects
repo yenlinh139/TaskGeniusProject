@@ -1,0 +1,2 @@
+/api/* http://weblearn.ddns.net:4001/:splat 200
+/* /index.html 200

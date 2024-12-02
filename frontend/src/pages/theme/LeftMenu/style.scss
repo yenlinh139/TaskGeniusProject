@@ -1,0 +1,131 @@
+
+.text-menu {
+    font-size: 17px;
+    font-weight: 600;
+    margin: 0 15px 5px;
+    display: flex;
+    padding: 10px;
+    align-items: center;
+    color: #dedede;
+    border: none;
+    transition: all 0.2s ease-in;
+  
+    &:hover{
+        background: var(--lightBlue);
+        color: #dedede;
+        transition: all 0.2s ease-in; 
+    }
+  }
+  
+  .text-menu.active {
+    font-weight: bold;
+    color: var(--lightPrimary);
+
+    &:hover{
+      color: #dedede;
+      transition: all 0.2s ease-in; 
+  }
+  }
+
+.sidebar {
+    background: linear-gradient(to bottom, var(--darkBlue), var(--lightBlue));
+    height: 92vh;
+    width: 18vw;
+    color: #fff;
+    margin: 0;
+    transition: transform 0.3s ease;
+    transform: translateX(-110%);
+    overflow-y: auto;
+    z-index: 1000;
+
+    .sidebarHeader {
+      display: none;
+    }
+
+    &.open {
+        transform: translateX(0);
+      }
+    
+      @media (min-width: 767px) {
+        transform: translateX(0);
+        
+          }
+}
+
+.textMenuBig{
+  padding: 0 20px;
+}
+
+@media only screen and (max-width: 767px) {
+  .textMenuBig{
+    font-size: 13px;
+  }
+  .sidebar{
+    display: none;
+    &.open {
+      position: fixed;
+      left: 0;
+      width: 40vw;
+      display: block;
+      top:0;
+      height: 100vh;
+
+      // Logo and line styles
+      .sidebarHeader {
+        display: block;
+        text-align: center; // Center the logo and line
+
+        h4 {
+          padding: 30px 0 10px;
+          margin: 0; // Remove default margin
+          font-size: 24px; // Adjust font size for the logo
+          color: #fff; // Color for the logo text
+        }
+
+        .line {
+          width: 100%; // Width of the line
+          height: 1px; // Thickness of the line
+          background-color: #8d8d8d; // Color of the line
+          margin: 10px auto; // Center the line with margin
+        }
+      }
+    }
+  }
+
+  .overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background: rgba(0, 0, 0, 0.5); /* Dark background */
+    z-index: 900; /* Behind the sidebar */
+    display: none; /* Initially hidden */
+  }
+
+  .overlay.open {
+    display: block; /* Show when sidebar is open */
+  }
+
+  .text-menu {
+    font-size: 15px;
+    padding-left: 8px;
+  }
+
+  .dropdownHeader-toggle img {
+    height: 6vh;
+  }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 1024px) {
+  .text-menu {
+    font-size: 16px;
+    margin-bottom: 15px;
+  }
+  .sidebar {
+  padding: 10px 0 10px 10px;
+  width: 25vw;
+  }
+  
+}
+

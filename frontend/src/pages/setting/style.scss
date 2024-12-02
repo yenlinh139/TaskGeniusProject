@@ -1,0 +1,56 @@
+.infoUser {
+    padding: 10px;
+}
+.containerInfo {
+    margin-bottom: 30px;
+    background-color: #fff;
+    padding: 40px 30px;
+    border-radius: 10px;
+    h2 {
+        font-weight: 600;
+        font-size: 20px;
+        color: var(--darkBlue);
+        border-bottom: 2px solid #dedede;
+        padding: 10px 0 3px 8px;
+    }
+    .col-3 {
+        display: flex;
+        align-items: center;
+        justify-content: end;
+    }
+    
+}
+
+
+
+.widthInput {
+    width: 70%;
+}
+
+.avatar {
+    height: 50%;
+    width: 75%;
+}
+
+@media only screen and (max-width: 767px) { 
+    .widthInput {
+        width: 100%;
+    }
+    .containerInfo {
+        margin-bottom: 20px;
+        font-size: 14px;
+        input{
+            font-size: 12px;
+        }
+        h2 {
+            font-weight: 600;
+            font-size: 16px;
+        }
+    }
+    .buttonImg{
+        font-size: 14px;
+    }
+    .containerButtonImg {
+        justify-content: center;
+    }
+}
